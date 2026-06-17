@@ -142,7 +142,7 @@ describe("getCarnivoreNames", function () {
   });
 });
 
-describe.only("getTotalCost", function () {
+describe("getTotalCost", function () {
   it("returns 0 for empty cart", function () {
     expect(getTotalCost([])).toBe(0);
   });
@@ -171,7 +171,7 @@ describe.only("getTotalCost", function () {
   });
 });
 
-describe("zip", function () {
+describe.only("zip", function () {
   it("zips two arrays into an object", function () {
     expect(zip(["x", "y"], [6, 7])).toEqual({ x: 6, y: 7 });
   });
