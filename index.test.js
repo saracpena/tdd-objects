@@ -13,7 +13,7 @@ import {
   countCharacters,
 } from "./index.js";
 
-describ.only("getCohort", function () {
+describe.only("getCohort", function () {
   it("returns the cohort of a student", function () {
     expect(getCohort({ cohort: 2012, name: "Alice" })).toBe(2012);
   });

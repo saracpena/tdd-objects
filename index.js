@@ -11,11 +11,7 @@
  * getCohort({cohort: 3476, name: "Charlie"}); // 3476
  */
 export function getCohort(student) {
-  const student = {
-    cohort: 2026,
-    name: "Betty"
-  };
-  return getCohort.cohort;
+  return student.cohort;
 }
 
 /**
