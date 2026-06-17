@@ -209,5 +209,13 @@ export function zip(keys, values) {
  * countCharacters("aAa"); // {a: 2, A: 1}
  */
 export function countCharacters(word) {
-  // TODO
+  const countCharacters = {};
+  for (const letter of word){
+    if (countCharacters[letter]){
+      countCharacters[letter]++;
+    } else {
+      countCharacters[letter] = 1;
+    }
+  }
+  return countCharacters;
 }

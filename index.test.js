@@ -171,7 +171,7 @@ describe("getTotalCost", function () {
   });
 });
 
-describe.only("zip", function () {
+describe("zip", function () {
   it("zips two arrays into an object", function () {
     expect(zip(["x", "y"], [6, 7])).toEqual({ x: 6, y: 7 });
   });
@@ -183,7 +183,7 @@ describe.only("zip", function () {
   });
 });
 
-describe("countCharacters", function () {
+describe.only("countCharacters", function () {
   it("returns empty object for empty string", function () {
     expect(countCharacters("")).toEqual({});
   });
