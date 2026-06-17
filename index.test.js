@@ -25,7 +25,7 @@ describe("getCohort", function () {
   });
 });
 
-describe.only("sortStudents", function () {
+describe("sortStudents", function () {
   it("returns the student whose name comes first alphabetically", function () {
     const studentA = { cohort: 1, name: "Alice" };
     const studentB = { cohort: 1, name: "Bob" };
@@ -48,7 +48,7 @@ describe.only("sortStudents", function () {
   });
 });
 
-describe("makeFlag", function () {
+describe.only("makeFlag", function () {
   it("returns an object with the given color and icon", function () {
     expect(makeFlag("red", "circle")).toEqual({ color: "red", icon: "circle" });
   });
