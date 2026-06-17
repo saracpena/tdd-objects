@@ -57,7 +57,7 @@ describe("makeFlag", function () {
   });
 });
 
-describe.only("increment", function () {
+describe("increment", function () {
   it("increments the value by 1", function () {
     expect(increment({ value: 1 })).toEqual({ value: 2 });
   });
@@ -84,7 +84,7 @@ describe("getTaxicabDistance", function () {
   });
 });
 
-describe("getHerbivores", function () {
+describe.only("getHerbivores", function () {
   it("returns herbivores", function () {
     expect(
       getHerbivores([

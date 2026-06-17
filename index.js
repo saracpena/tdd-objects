@@ -98,7 +98,9 @@ export function increment(count) {
  *
  */
 export function getTaxicabDistance(from, to) {
-  // TODO
+   const xDistance = Math.abs(from.x - to.x);
+   const yDistance = Math.abs(from.y - to.y);
+   return xDistance + yDistance;
 }
 
 /**
@@ -114,8 +116,14 @@ export function getTaxicabDistance(from, to) {
  * getHerbivores([{name: "Rabbit", isHerbivore: true}]); // [{name: "Rabbit", isHerbivore: true}]
  */
 export function getHerbivores(animals) {
-  // TODO
-}
+  const herbivores = [];
+  for (const animal of animals) {
+    if(animal.isHerbivore) {
+      herbivores.push(animal);
+    }
+  }
+    return herbivores;
+  }
 
 /**
  * @typedef {{name: string, isCarnivore: boolean}} Animal
