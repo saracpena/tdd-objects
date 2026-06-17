@@ -138,8 +138,14 @@ export function getHerbivores(animals) {
  * getCarnivoreNames([{name: "Wolf", isCarnivore: true}]); // ["Wolf"]
  */
 export function getCarnivoreNames(animals) {
-  // TODO
-}
+    const animalNames = [];
+  for (const animal of animals) {
+    if(animal.isCarnivore) {
+      animalNames.push(animal.name);
+    }
+  }
+    return animalNames;
+  }
 
 /**
  * @typedef {{name: string, quantity: number, price: number}} Item

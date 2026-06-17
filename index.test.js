@@ -84,7 +84,7 @@ describe("getTaxicabDistance", function () {
   });
 });
 
-describe.only("getHerbivores", function () {
+describe("getHerbivores", function () {
   it("returns herbivores", function () {
     expect(
       getHerbivores([
@@ -113,7 +113,7 @@ describe.only("getHerbivores", function () {
   });
 });
 
-describe("getCarnivoreNames", function () {
+describe.only("getCarnivoreNames", function () {
   it("returns names of carnivorous animals", function () {
     expect(
       getCarnivoreNames([
