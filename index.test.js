@@ -13,7 +13,7 @@ import {
   countCharacters,
 } from "./index.js";
 
-describe.only("getCohort", function () {
+describe("getCohort", function () {
   it("returns the cohort of a student", function () {
     expect(getCohort({ cohort: 2012, name: "Alice" })).toBe(2012);
   });
@@ -25,7 +25,7 @@ describe.only("getCohort", function () {
   });
 });
 
-describe("sortStudents", function () {
+describe.only("sortStudents", function () {
   it("returns the student whose name comes first alphabetically", function () {
     const studentA = { cohort: 1, name: "Alice" };
     const studentB = { cohort: 1, name: "Bob" };
