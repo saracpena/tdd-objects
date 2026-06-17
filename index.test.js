@@ -48,7 +48,7 @@ describe("sortStudents", function () {
   });
 });
 
-describe.only("makeFlag", function () {
+describe("makeFlag", function () {
   it("returns an object with the given color and icon", function () {
     expect(makeFlag("red", "circle")).toEqual({ color: "red", icon: "circle" });
   });
@@ -57,7 +57,7 @@ describe.only("makeFlag", function () {
   });
 });
 
-describe("increment", function () {
+describe.only("increment", function () {
   it("increments the value by 1", function () {
     expect(increment({ value: 1 })).toEqual({ value: 2 });
   });
