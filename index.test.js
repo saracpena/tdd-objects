@@ -113,7 +113,7 @@ describe("getHerbivores", function () {
   });
 });
 
-describe.only("getCarnivoreNames", function () {
+describe("getCarnivoreNames", function () {
   it("returns names of carnivorous animals", function () {
     expect(
       getCarnivoreNames([
@@ -142,7 +142,7 @@ describe.only("getCarnivoreNames", function () {
   });
 });
 
-describe("getTotalCost", function () {
+describe.only("getTotalCost", function () {
   it("returns 0 for empty cart", function () {
     expect(getTotalCost([])).toBe(0);
   });
